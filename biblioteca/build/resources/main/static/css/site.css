@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background-color: #fbeaea;
+    color: #5e3434;
+}
+
+.container {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(130, 40, 40, 0.1);
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #8a3737;
+}
+
+.cabecalho p, footer p, .vazio {
+    color: #896161;
+}
+
+.menu nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.menu a, button {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #ffffff;
+    background-color: #d17878;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu a:hover, button:hover {
+    background-color: #b95454;
+}
+
+footer {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.painel {
+    margin-top: 24px;
+    padding: 22px;
+    background-color: #fff7f7;
+    border: 1px solid #f5dcdc;
+    border-radius: 8px;
+}
+
+.painel h2 {
+    margin-top: 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: #7d4747;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid #e9cbcb;
+    border-radius: 5px;
+    font: inherit;
+    background-color: #ffffff;
+}
+
+.formulario textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    outline: 2px solid #efb8bd;
+    border-color: #d17878;
+}
+
+.formulario button {
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+.tabela-area {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f5dcdc;
+}
+
+th {
+    color: #8a3737;
+    background-color: #fbeaea;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 24px;
+    color: #8a3737;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 22px;
+    }
+
+    .menu nav {
+        flex-direction: column;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .formulario button {
+        width: 100%;
+    }
+}
